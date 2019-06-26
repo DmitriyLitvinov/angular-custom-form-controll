@@ -1,0 +1,19 @@
+<div class="double-form-element-container">
+  <mat-form-field>
+    <mat-select placeholder="Choose contact type"
+                [(value)]="selectedType"
+                (valueChange)="setValue()">
+      <mat-option *ngFor="let type of contactTypes" [value]="type.value">
+        {{type.label}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input name="contact"
+           matInput autocomplete="false"
+           placeholder="Type contact value"
+           [value]="fieldValue"
+           (input)="setInputValue($event)">
+  </mat-form-field>
+</div>

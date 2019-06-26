@@ -1,0 +1,52 @@
+<p>
+  users-list works!
+</p>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="firstName">
+    <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+    <mat-cell *matCellDef="let user">
+      {{user.firstName}}
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="lastName">
+    <mat-header-cell *matHeaderCellDef>Last name</mat-header-cell>
+    <mat-cell *matCellDef="let user"> {{user.lastName}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="phone">
+    <mat-header-cell *matHeaderCellDef>
+      <mat-icon [appIconColor]="iconColor">phone</mat-icon>
+      Phone
+    </mat-header-cell>
+    <mat-cell *matCellDef="let user">
+      <span>{{user.phone}}</span>
+    </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="email">
+    <mat-header-cell *matHeaderCellDef>
+      <mat-icon [appIconColor]="iconColor">email</mat-icon>
+      E-mail
+    </mat-header-cell>
+    <mat-cell *matCellDef="let user">
+      {{user.email}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="dateOfBirth">
+    <mat-header-cell *matHeaderCellDef>
+      <mat-icon [appIconColor]="iconColor">cake</mat-icon>
+      Birthday
+    </mat-header-cell>
+    <mat-cell *matCellDef="let user"> {{user.dateOfBirth | customDate: dateFormat}} </mat-cell>
+  </ng-container>
+
+  <ng-container matColumnDef="age">
+    <mat-header-cell *matHeaderCellDef>Age</mat-header-cell>
+    <mat-cell *matCellDef="let user"> {{user.dateOfBirth | age}}</mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</table>

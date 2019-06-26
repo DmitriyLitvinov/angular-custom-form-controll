@@ -1,0 +1,65 @@
+[
+  {
+    "id": "1",
+    "firstName": "John",
+    "lastName": "Doe",
+    "gender": "male",
+    "phone": "+9(999) 99-99-999",
+    "email": "john.doe@somemail.com",
+    "dateOfBirth": 321051600000
+  },
+  {
+    "id": "2",
+    "firstName": "Katty",
+    "lastName": "Doe",
+    "gender": "female",
+    "phone": "+9(999) 99-99-998",
+    "email": "katty.doe@somemail.com",
+    "dateOfBirth": 415659600000
+  },
+  {
+    "id": "3",
+    "firstName": "Junior",
+    "lastName": "Doe",
+    "gender": "intersex",
+    "phone": "+9(999) 99-99-997",
+    "email": "jun.doe@somemail.com",
+    "dateOfBirth": 794354400000
+  },
+  {
+    "id": "4",
+    "firstName": "Karl",
+    "lastName": "Galager",
+    "gender": "male",
+    "phone": "+9(999) 99-99-996",
+    "email": "karl.galager@somemail.com",
+    "dateOfBirth": 668120400000
+  },
+  {
+    "id": "5",
+    "firstName": "Debby",
+    "lastName": "Galager",
+    "gender": "female",
+    "phone": "+9(999) 99-99-995",
+    "email": "debs.galager@somemail.com",
+    "dateOfBirth": 619128000000
+  },
+  {
+    "id": "6",
+    "firstName": "Fiona",
+    "lastName": "Galager",
+    "gender": "female",
+    "phone": "+9(999) 99-99-994",
+    "email": "fiona.galager@somemail.com",
+    "dateOfBirth": 438296400000
+  },
+  {
+    "id": "7",
+    "firstName": "Lip",
+    "lastName": "Galager",
+    "gender": "male",
+    "phone": "+9(999) 99-99-993",
+    "email": "lip.galager@somemail.com",
+    "dateOfBirth": 571870800000
+  }
+]

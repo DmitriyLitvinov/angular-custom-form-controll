@@ -1,0 +1,18 @@
+:host {
+  display: block;
+}
+
+.double-form-element-container {
+  width: 100%;
+  display: flex;
+
+  mat-form-field {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+  }
+}
